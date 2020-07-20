@@ -1,7 +1,8 @@
 # The Skript Pack!
 Also known as **SkrPak**. Created by **Edb** *(MCJ _Edb/sl_me)*
 
-The SkrPak is a collection of simple yet useful skripts for anyone starting out with Skript. It could also be used as a starting point for skripts.
+The SkrPak is a collection of simple yet useful skripts for anyone starting out with Skript. It could also be used as a starting point for skripts or servers.
+###### SkrPak is distributed under the [MIT license](https://mit-license.org/).
 
 ## The pack includes skripts such as...
 - A gamemode switcher (/gm).
