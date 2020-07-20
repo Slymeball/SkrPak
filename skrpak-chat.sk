@@ -1,0 +1,68 @@
+# [SKRPAK | BY _EDB]
+# Chat Control
+
+# OPTIONS #
+options:
+
+# LANGUAGE #
+
+    # Chat Format
+    # Variables: %player% | %message% | ANY PAPI Placeholder
+    cf: "%vault_prefix%%player% &7sent &e%message%"
+variables:
+    {chat.muted} = false
+
+on chat:
+    cancel event
+    if {chat.muted} is false:
+        send {@cf} to all players
+    else:
+        send "&c&lERROR! &7The chat is muted."
+
+command /chat [<string>] [<string>]:
+    aliases: /chc, /cht, /c
+    trigger:
+        if arg-1 does not exist:
+            send "&cS&6k&er&aP&ba&dk &7Chat Help", "", "&7/c reload &8| &7Reloads the skript.", "&7/c mute [-s] &8| &7Mutes the chat (-s does it anonymously)." and "&7/c clear [-s] &8| &7Clears the chat (-s does the thing)."
+        else if arg-1 is "reload":
+            send "&cS&6k&er&aP&ba&dk &8| &7Reloading &c&lskrpak-chat&7..."
+            reload skript "skrpak-chat.sk"
+        else if arg-1 is "mute":
+            if player has permission "skrpak.chat.mute"
+                set {chat.muted} to true
+                is arg-2 isn't "-s":
+                    send "&c&lMUTE. &7Chat has been muted by %player%&7." to all players
+                else:
+                    send "&c&lMUTE. &7Chat has been muted." to all players
+            else:
+                send "&c&lERROR! &7We don't serve unprivilaged brats."
+        else if arg-1 is "clear":
+            if player has permission "skrpak.chat.clear":
+                loop 999 times:
+                    send ""
+                if arg-2 isn't "-s":
+                    send "&c&lCLEAR. &7Chat has been cleared by %player%&7." to all players
+                else:
+                    send "&c&lCLEAR. &7Chat has been cleared by %player%&7." to all players
+            else:
+                send "&c&lERROR! &7We just can't do that if you don't have a badge."
+        else:
+            send "&cS&6k&er&aP&ba&dk &7Chat Help", "", "&7/c reload &8| &7Reloads the skript.", "&7/c mute [-s] &8| &7Mutes the chat (-s does it anonymously)." and "&7/c clear [-s] &8| &7Clears the chat (-s does the thing)."
+
+command /sudo [<offlineplayer>] [<string>]:
+    aliases: /su, /forcesend, /send
+    trigger:
+        if player has permission "skrpak.chat.sudo":
+            if arg-1 is set:
+                if arg-1 is online:
+                    if arg-2 is set:
+                        send "&7Forcing &f%arg-1% &7to send &f""%arg-2%""&7."
+                        force arg-1 to send message arg-2
+                    else:
+                        send "&c&lERROR! &7I can't force someone to do something if there's no something."
+                else:
+                    send "&c&lERROR! &7I can't force someone to do something if that someone doesn't exist."
+            else:
+                send "&c&lERROR! &7I can't force someone to do something if that someone doesn't exist."
+        else:
+            send "&c&lERROR! &7Boss says I can't serve you."
