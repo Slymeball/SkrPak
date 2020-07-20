@@ -5,7 +5,7 @@ The SkrPak is a collection of simple yet useful skripts for anyone starting out 
 
 ## The pack includes skripts such as...
 - A gamemode switcher (/gm).
-  - Go to the Wiki for more information about the /gm command.
+  - Go to the [Wiki](https://github.com/the3dbb/SkrPak/wiki/Gamemode-Switcher) for more information about the /gm command.
 - Time and Weather control.
 - Join/Leave messages.
 - A chat control-like skript.
