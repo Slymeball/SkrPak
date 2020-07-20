@@ -1,0 +1,48 @@
+# [SKRPAK | BY _EDB]
+# Join/Leaves
+
+# Finally, an options section!
+options:
+
+# ------------------------ #
+#         LANGUAGE         #
+# ------------------------ #
+
+    # Join message:
+    join: "&8[ &a+ &8] &7%player%"
+
+    # First join message:
+    fjoin: "&8[ &a+ &8] &7Greetings and salutations, %player%&7! &6(%{uniquejoins}%&6)"
+
+    # Leave message:
+    leave: "&8[ &c- &8] &7%player%"
+
+    # MOTD (The thing that gets sent when you join.)
+    # Format: "line1", "line2" and "line3"
+    motd: "&7Welcome, &a%player%&7!", "&7Players online: %{online}%/"
+
+# Okay, now the skript starts.
+
+variables:
+    {fjoin.%player%} = true
+    {uniquejoins} = 0
+    {online} = 0
+
+on skript load:
+    set {online} to 0
+    loop all players:
+        add 1 to {online}
+
+on join:
+    add 1 to {online}
+    if {fjoin.%player%} is false:
+        set the login message to "{@join}"
+    else:
+        add 1 to {uniquejoins}
+        set the login message to "{@fjoin}"
+        set {fjoin.%player%} to false
+    send "{@motd}"
+
+on leave:
+    remove 1 from {online}
+    set the disconnect message to "{@leave}"
