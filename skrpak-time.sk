@@ -4,46 +4,55 @@
 command /time [<time>] [<string>] [<world>]:
     aliases: /t
     trigger:
-        if arg-1 is set:
-            if arg-3 is set:
-                set time in arg-3 to arg-1
-                if arg-2 isn't "-s":
-                    send "&7The time has been set to %arg-1%&7 in %arg-3%&7." to all players
+        if player has permission "skrpak.time":
+            if arg-1 is set:
+                if arg-3 is set:
+                    set time in arg-3 to arg-1
+                    if arg-2 isn't "-s":
+                        send "&7The time has been set to %arg-1%&7 in %arg-3%&7." to all players
+                    else:
+                        send "&7[SILENT] The time has been set to %arg-1%&7 in %arg-3%&7."
                 else:
-                    send "&7[SILENT] The time has been set to %arg-1%&7 in %arg-3%&7."
+                    set time in player's world to arg-1
+                    if arg-2 isn't "-s":
+                        send "&7The time has been set to %arg-1%&7 in %player's world%&7." to all players
+                    else:
+                        send "&7[SILENT] The time has been set to %arg-1%&7 in %player's world%&7."
             else:
-                set time in player's world to arg-1
-                if arg-2 isn't "-s":
-                    send "&7The time has been set to %arg-1%&7 in %player's world%&7." to all players
-                else:
-                    send "&7[SILENT] The time has been set to %arg-1%&7 in %player's world%&7."
+                send "&c&lERROR! &7That's not a time. (00:00 to 23:59)"
         else:
-            send "&c&lERROR! &7That's not a time. (00:00 to 23:59)"
+            send "&c&lERROR! &7You can't do that. Not at all."
 
 command /day [<world>] [<string>]:
-    if arg-1 isn't set:
-        set time in player's world to 6:00
-        if arg-2 isn't "-s":
-            send "&7It's day in %player's world%&7."
+    if player has permission "skrpak.time.day":
+        if arg-1 isn't set:
+            set time in player's world to 6:00
+            if arg-2 isn't "-s":
+                send "&7It's day in %player's world%&7."
+            else:
+                send "&7[SILENT] It's day in %player's world%&7."
         else:
-            send "&7[SILENT] It's day in %player's world%&7."
+            set time in arg-1 to 6:00
+            if arg-2 isn't "-s":
+                send "&7It's day in %arg-3%&7."
+            else:
+                send "&7[SILENT] It's day in %arg-3%&7."
     else:
-        set time in arg-1 to 6:00
-        if arg-2 isn't "-s":
-            send "&7It's day in %arg-3%&7."
-        else:
-            send "&7[SILENT] It's day in %arg-3%&7."
+        send "&c&lERROR! &7Use a bed, not a command."
 
 command /night [<world>] [<string>]:
-    if arg-1 isn't set:
-        set time in player's world to 18:00
-        if arg-2 isn't "-s":
-            send "&7It's night in %player's world%&7."
+    if player has permission "skrpak.time.night":
+        if arg-1 isn't set:
+            set time in player's world to 18:00
+            if arg-2 isn't "-s":
+                send "&7It's night in %player's world%&7."
+            else:
+                send "&7[SILENT] It's night in %player's world%&7."
         else:
-            send "&7[SILENT] It's night in %player's world%&7."
+            set time in arg-1 to 18:00
+            if arg-2 isn't "-s":
+                send "&7It's night in %arg-3%&7."
+            else:
+                send "&7[SILENT] It's night in %arg-3%&7."
     else:
-        set time in arg-1 to 18:00
-        if arg-2 isn't "-s":
-            send "&7It's night in %arg-3%&7."
-        else:
-            send "&7[SILENT] It's night in %arg-3%&7."
+        send "&c&lERROR! &7The bouncer doesn't see your name on the list."
