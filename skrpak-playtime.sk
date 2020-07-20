@@ -1,0 +1,23 @@
+# [SKRPAK | BY _EDB]
+# Playtime
+
+variables:
+    {joins.%player%} = 0
+    {lookups.%player%} = 0
+
+every 1 second:
+    loop all players:
+        add 1 second to {playtime.%player%}
+
+on join:
+    add 1 to {joins.%player%}
+
+command /playtime [<offlineplayer>]:
+    aliases: /joins, /stats
+    trigger:
+        if arg-1 isn't set:
+            add 1 to {lookups.%player%}
+            send "&f%player%&7'(s) statistics:", "", "&7Playtime: &f%{playtime.%player%}%", "&7Joins: &f%{joins.%player%}%" and "&7Lookups: &f%{lookups.%player%}%"
+        else:
+            add 1 to {lookups.%arg-1%}
+            send "&f%arg-1%&7'(s) statistics:", "", "&7Playtime: &f%{playtime.%arg-1%}%", "&7Joins: &f%{joins.%arg-1%}%" and "&7Lookups: &f%{lookups.%arg-1%}%"
