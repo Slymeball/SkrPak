@@ -1,20 +1,32 @@
-# The Skript Pack!
-Also known as **SkrPak**. Created by **Edb** *(MCJ _Edb/sl_me)*
+# SkrPak
+It's a pack... full of Skripts.
 
-- [Bug Reports](https://github.com/the3dbb/SkrPak/issues)
-- [Read the Wiki](https://github.com/the3dbb/SkrPak/wiki)
-- [Get the Latest Release](https://github.com/the3dbb/SkrPak/releases)
+<p align="center">
+  <b>Project Links:</b><br>
+  <a href="github.com/the3dbb/SkrPak/issues">Report a Bug</a> • 
+  <a href="github.com/the3dbb/SkrPak/wiki">Read the Wiki</a> • 
+  <a href="github.com/the3dbb/SkrPak/releases">Download the Pack</a>
+</p>
 
-The SkrPak is a collection of simple yet useful skripts for anyone starting out with Skript. It could also be used as a starting point for skripts or servers.
-###### SkrPak is distributed under the [MIT license](https://mit-license.org/).
+SkrPak is intended to be used by beginners to learn what stuff does. It goes over most everything you need, from variables to loops. It can also be used as a starting point for servers needing a quick gamemode switcher similar to that of Essentials.
 
-## The pack includes skripts such as...
-- A gamemode switcher (/gm).
-  - Go to the [Wiki](https://github.com/the3dbb/SkrPak/wiki/Gamemode-Switcher) for more information about the /gm command.
-- Time control.
-- Join/Leave messages.
-- A chat control-like skript.
-- A playtime command.
-  - Playtime might be an inefficent skript for unpowered servers since it loops through the lists of players each second.
+## Features
+The pack includes skripts such as...
+- A gamemode switcher you're already familiar with.
+- Time Management (for when you REALLY want daytime).
+- Custom Join/Leave messages.
+- A fair amount of CHC (Chat Control).
+- Playtimes
+  - Some servers might struggle due to the constant looping.
 
-More skripts might come at a later time. If you'd like to, you can stay updated with the project.
+Some more Skripts may come at a later date.
+
+## License
+The SkrPak is distributed with the MIT License, as is all my other projects.
+> Copyright © 2020 the3dbb
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
