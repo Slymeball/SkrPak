@@ -1,5 +1,6 @@
-# SkrPak
-It's a pack... full of Skripts.
+<p align="center">
+  <img src="skrpak.png" alt="SkrPak logo.">
+</p>
 
 <p align="center">
   <b>Project Links:</b><br>
