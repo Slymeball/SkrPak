@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/the3dbb/SkrPak/releases/download/latest/SkrPak.zip">Download .ZIP</a>
+  <br><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/the3dbb/SkrPak?label=Version&logo=github">
 </p>
 
 SkrPak is intended to be used by beginners to learn what stuff does. It goes over most everything you need, from variables to loops. It can also be used as a starting point for servers needing a quick gamemode switcher similar to that of Essentials.
