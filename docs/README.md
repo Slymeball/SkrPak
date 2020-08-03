@@ -1,7 +1,7 @@
 <h1 align="center"><a href="the3dbb.github.io">edb.onGitHub</a></h1>
-<p align="center"><a href="the3dbb.github.io">Root</a> / <a href="the3dbb.github.io/projects">Projects</a> / <a href="the3dbb.github.io/SkrPak">SkrPak</a><br>
-  <br><a href="the3dbb.github.io">Home</a> • <a href="the3dbb.github.io/projects">Projects</a> • <a href="the3dbb.github.io/contact">Contact Me</a>
-  <br><a href="the3dbb.github.io/SkrPak">SkrPak</a> • <a href="github.com/the3dbb/SkrPak/wiki">SP Wiki</a> • <a href="github.com/the3dbb/SkrPak/issues">Issue Tracker</a>
+<p align="center"><a href="https://the3dbb.github.io">Root</a> / <a href="https://the3dbb.github.io/projects">Projects</a> / SkrPak<br>
+  <br><a href="https://the3dbb.github.io">Home</a> • <a href="https://the3dbb.github.io/projects">Projects</a> • <a href="https://the3dbb.github.io/contact">Contact Me</a>
+  <br>SkrPak • <a href="https://github.com/the3dbb/SkrPak/wiki">SP Wiki</a> • <a href="https://github.com/the3dbb/SkrPak/issues">Issue Tracker</a>
 </p>
 
 <p align="center">
