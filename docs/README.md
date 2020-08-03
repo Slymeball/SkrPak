@@ -1,12 +1,13 @@
+<p align="center"><b>edb.OnGithub</b>
+  <br><a href="the3dbb.github.io">Home</a> • <a href="the3dbb.github.io/projects">Projects</a> • <a href="the3dbb.github.io/contact">Contact Me</a>
+  <br><a href="the3dbb.github.io/SkrPak">SkrPak</a> • <a href="the3dbb.github.io/wiki">SP Wiki</a> • <a href="github.com/the3dbb/SkrPak/issues">Issue Tracker</a>
+
 <p align="center">
   <img src="skrpak.png" alt="SkrPak logo.">
 </p>
 
 <p align="center">
-  <b>Project Links:</b><br>
-  <a href="github.com/the3dbb/SkrPak/issues">Report a Bug</a> • 
-  <a href="github.com/the3dbb/SkrPak/wiki">Read the Wiki</a> • 
-  <a href="github.com/the3dbb/SkrPak/releases">Download the Pack</a>
+  <a href="https://github.com/the3dbb/SkrPak/releases/download/latest/SkrPak.zip">Download .ZIP</a>
 </p>
 
 SkrPak is intended to be used by beginners to learn what stuff does. It goes over most everything you need, from variables to loops. It can also be used as a starting point for servers needing a quick gamemode switcher similar to that of Essentials.
